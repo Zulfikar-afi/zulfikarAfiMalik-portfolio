@@ -2,52 +2,92 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Zulfikar Afi Malik | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <header>
+
+  <!-- Toggle -->
+  <div class="toggle-container">
+    <label class="switch">
+      <input type="checkbox" id="theme-toggle">
+      <span class="slider round"></span>
+    </label>
+  </div>
+
+  <!-- Header -->
+  <header data-aos="fade-down">
+    <div class="profile-pic"></div>
     <h1>ZULFIKAR AFI MALIK</h1>
-    <p>IoT Enthusiast | Telecommunication Engineering Graduate</p>
-    <p>Experience in FTTH & Embedded System Projects</p>
-    <p>📧 zulfikar.afi11@gmail.com | 📱 082338213723 | 🏠 Purbalingga, Central Java</p>
-    <p>🌐 <a href="https://www.linkedin.com/in/zulfikar-afi-malik-8b4404229" target="_blank">LinkedIn</a></p>
+    <p>IoT Enthusiast | Telecom Eng. Graduate | FTTH & Embedded System</p>
+    <p>📧 zulfikar.afi11@gmail.com | 📱 082338213723</p>
+    <p>🏠 Purbalingga, Central Java</p>
+    <p>🌐 <a href="https://www.linkedin.com/in/zulfikar-afi-malik-8b4404229/" target="_blank">LinkedIn</a></p>
   </header>
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <p>I’m Zulfikar Afi Malik, a graduate ... (lanjutin dari isi kamu)</p>
-    </section>
 
-    <section>
-      <h2>Internship Experience</h2>
-      <ul>
-        <li>Conducted FTTH network surveys ...</li>
-        ...
-      </ul>
-    </section>
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#certifications">Certifications</a>
+  </nav>
 
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li>Basic understanding of networking ...</li>
-        ...
-      </ul>
-    </section>
+  <!-- Sections -->
+  <section id="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>I’m Zulfikar Afi Malik, a graduate of Telecommunication Engineering from Telkom University Purwokerto. I have a strong interest in Internet of Things (IoT), networking, and embedded systems.</p>
+    <p>I completed a capstone project focused on NPK nutrient monitoring using sensor integration and LoRa communication, and gained internship experience at PT PLN Icon Plus in customer data management and FTTH network surveys.</p>
+    <p>I’m ready to contribute to technical projects that demand accuracy, communication, and collaboration.</p>
+  </section>
 
-    <section>
-      <h2>Certifications</h2>
-      <ul>
-        <li><strong>CCNA</strong> - Link: ...</li>
-        ...
-      </ul>
-    </section>
+  <section id="experience" data-aos="fade-right">
+    <h2>Internship Experience</h2>
+    <p><strong>Intern – Retail Division (Iconnet)</strong><br>
+    PT PLN Icon Plus – Semarang (Feb – Jun 2024)</p>
+    <ul>
+      <li>Conducted FTTH network surveys using the Rismon platform</li>
+      <li>Managed and updated customer data through the ICRM+ system</li>
+      <li>Supported service improvement using field data validation</li>
+      <li>Collaborated with Central Java team to improve coverage quality</li>
+    </ul>
+  </section>
 
-    <section>
-      <h2>Capstone Project</h2>
-      <p>NPK Parameter Measurement System for Paddy Plants Using IoT and LoRa ...</p>
-    </section>
-  </main>
+  <section id="skills" data-aos="fade-left">
+    <h2>Skills</h2>
+    <ul>
+      <li>Networking & electrical system basics</li>
+      <li>FTTH field survey and documentation</li>
+      <li>IoT-microcontroller hands-on experience</li>
+      <li>Basic LoRa communication & sensor integration</li>
+      <li>Microsoft Office & Google Workspace</li>
+      <li>Data entry, reporting, troubleshooting</li>
+    </ul>
+  </section>
+
+  <section id="certifications" data-aos="zoom-in">
+    <h2>Certifications</h2>
+    <ul>
+      <li><strong>CCNAv7: Introduction to Networks</strong> – <a href="https://drive.google.com/file/d/1y4WalL4dT1fHKptklaVtS7DJj1iK7CC0/view">View</a></li>
+      <li><strong>CCNAv7: Switching, Routing, and Wireless Essentials</strong> – <a href="https://drive.google.com/file/d/1wsW0tZmi0Y-nPQbEVZOkQK9M9WGkXCV3/view">View</a></li>
+      <li><strong>Intro to Internet of Things</strong> – <a href="https://drive.google.com/file/d/1u6gOO2pVgtn0ZbxexjIxyJZv4Evia70c/view">View</a></li>
+      <li><strong>Metaverse 101</strong> – <a href="https://drive.google.com/file/d/1dyLkNBf2rbGsRbkUFv_BKmDeuZrVuaMt/view">View</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 Zulfikar Afi Malik</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    toggle.addEventListener('change', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
 </body>
 </html>
